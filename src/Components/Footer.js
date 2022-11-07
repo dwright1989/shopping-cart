@@ -1,7 +1,7 @@
 export default function Footer(){
     return (
         <div id="footer">
-            I am the footer
+            Created by Debbie Wright 2022
         </div>
     );
 }
