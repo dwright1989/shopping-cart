@@ -1,8 +1,16 @@
 import { render, screen } from '@testing-library/react';
 import Footer from '../Components/Footer';
 
-test('renders footer', () => {
-  render(<Footer />);
-  const footerContent = screen.getByText(/i am the footer/i);
-  expect(footerContent).toBeInTheDocument();
-});
+
+
+describe('footer testing', ()=>
+{
+      test('renders heading', ()=>{
+        render(<Footer />);
+        const divFooter = screen.getByText(/Created by Debbie Wright 2022/i);
+        expect(divFooter).toBeInTheDocument();
+      });
+
+}
+)
+
