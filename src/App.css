@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Vibes&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@500&display=swap');
 :root{
   --main-color: white;
   --secondary-color: black;
   --tertiary-color: #c1e1ec;
+}
+
+body{
+  font-family: 'Hahmlet', serif;
 }
 
 .page{
