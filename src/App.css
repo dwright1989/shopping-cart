@@ -10,6 +10,15 @@ body{
   font-family: 'Hahmlet', serif;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
 .page{
   opacity: 0.9;
   background-color: var(--secondary-color);

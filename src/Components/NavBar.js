@@ -6,7 +6,9 @@ export default function NavBar(){
                 <a href="">Home</a>
                 <a href="">Products</a>
                 <a href="">About</a>
-                <a href="">Cart</a>
+                <a href=""><span class="material-symbols-outlined">
+                    shopping_cart
+                </span></a>
            </div>
         </div>
     );
