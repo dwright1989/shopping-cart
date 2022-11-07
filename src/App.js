@@ -14,10 +14,10 @@ function App() {
       <div id="pageDiv">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/Shop" element={<Shop/>}/>
-          <Route path="/About" element={<About/>}/>
-          <Route path="/Cart" element={<Cart/>}/>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/shop" element={<Shop/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/cart" element={<Cart/>}/>
         </Routes>
       </BrowserRouter>
       </div>    
