@@ -1,3 +1,20 @@
+.page{
+  height: 90vh;
+  opacity: 0.9;
+  background-color: black;
+  color: white;
+}
+
+#pageDiv{
+  background-image: url("./Images/background.jpg");
+}
+
+/*NAVBAR*/
 #navBar{
-  background-color: blue;
+  display: flex;
+}
+
+#links{
+  display: flex;
+  gap: 2rem;
 }
