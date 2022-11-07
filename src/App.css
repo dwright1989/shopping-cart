@@ -78,6 +78,13 @@ body{
   padding: 0.5vw 1vw;
 }
 
+#shopButton:hover,
+#shopButton:focus{
+  cursor:pointer;
+  background-color: var(--main-color);
+  transform: translateY(-0.25em);
+}
+
 /*FOOTER*/
 #footer{
   text-align: center;
