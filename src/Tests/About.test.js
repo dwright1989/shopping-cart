@@ -1,8 +1,15 @@
 import { render, screen } from '@testing-library/react';
 import About from '../Components/About';
 
-test('renders about', () => {
-  render(<About />);
-  const aboutContent = screen.getByText(/i am the about/i);
-  expect(aboutContent).toBeInTheDocument();
-});
+
+describe('about testing', ()=>
+{
+      test('renders about', ()=>{
+        render(<About />);
+        const heading = screen.getByRole("heading", {name:/clothes 4 you/i});
+        expect(heading).toBeInTheDocument();
+      });
+
+}
+)
+

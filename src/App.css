@@ -24,7 +24,6 @@ body{
   background-color: var(--secondary-color);
   color: var(--main-color);
   text-align: center;
-  min-height: 60vh;
 }
 
 #pageDiv{
@@ -83,6 +82,19 @@ body{
   cursor:pointer;
   background-color: var(--main-color);
   transform: translateY(-0.25em);
+}
+
+/*ABOUT*/
+#about{
+  padding: 2vw;
+}
+
+#about>h1{
+  font-size: 5vw;
+}
+
+#about>p{
+  padding: 0 10vw;
 }
 
 /*FOOTER*/

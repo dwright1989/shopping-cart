@@ -14,7 +14,7 @@ function App() {
       <div id="pageDiv">
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>
           <Route path="/shop" element={<Shop/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/cart" element={<Cart/>}/>
