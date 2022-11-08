@@ -8,6 +8,7 @@ import Cart from "./Components/Cart.js";
 import './App.css';
 
 function App() {
+
   return (
     <div id="mainContent">
       <NavBar/>
