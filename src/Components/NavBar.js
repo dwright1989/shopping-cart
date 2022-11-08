@@ -1,4 +1,4 @@
-export default function NavBar(){
+export default function NavBar(props){
     return (
         <div id="navBar">
            <h1 className="brand">Clothes<span className="tertiary">4</span>You</h1>
@@ -9,6 +9,7 @@ export default function NavBar(){
                 <a href="cart"><span className="material-symbols-outlined">
                     shopping_cart
                 </span></a>
+                <p id="basketQuantity">{props.basketQuantity.total}</p>
            </div>
         </div>
     );

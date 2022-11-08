@@ -1,4 +1,5 @@
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import React from "react";
 import NavBar from "./Components/NavBar.js";
 import Footer from "./Components/Footer.js";
 import Home from "./Components/Home.js";
@@ -9,9 +10,13 @@ import './App.css';
 
 function App() {
 
+  const [basketQuantity, setBasketQuantity] = React.useState({
+      total: 0
+  });
+
   return (
     <div id="mainContent">
-      <NavBar/>
+      <NavBar basketQuantity={basketQuantity}/>
       <div id="pageDiv">
       <BrowserRouter>
         <Routes>

@@ -18,6 +18,9 @@ body{
   'opsz' 48
 }
 
+.tertiary{
+  color: var(--tertiary-color);
+}
 
 .page{
   color: var(--main-color);
@@ -55,8 +58,18 @@ body{
   text-decoration: underline;
 }
 
-.tertiary{
-  color: var(--tertiary-color);
+#basketQuantity{
+  background-color: var(--tertiary-color);
+  border-radius: 50px;
+  width: 1.4rem;
+  height: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 2.2rem;
 }
 
 /*HOME*/
@@ -120,17 +133,14 @@ body{
 }
 
 #card>button{
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
   border: none;
-  color: var(--main-color);
+  color: var(--secondary-color);
   font-family: 'Vibes', cursive;
   font-weight:bold;
   font-size: 1.5vw;
   cursor: pointer;
 }
-
-
-
 
 /*FOOTER*/
 #footer{
