@@ -14,6 +14,15 @@ function App() {
       total: 0
   });
 
+  function handleAddToBasket(id){
+      setBasketQuantity
+      (prevQuantity => ({
+        total: prevQuantity.total+1
+    }))
+  }
+
+  
+
   return (
     <div id="mainContent">
       <NavBar basketQuantity={basketQuantity}/>
@@ -21,7 +30,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/shop" element={<Shop/>}/>
+          <Route path="/shop" element={<Shop  handleAddToBasket={handleAddToBasket}/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/cart" element={<Cart/>}/>
         </Routes>
