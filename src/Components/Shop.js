@@ -1,4 +1,5 @@
 import Products from "../Components/Products/ProductItems";
+import Card from "../Components/Card";
 
 export default function Shop(){
     return (
@@ -6,7 +7,7 @@ export default function Shop(){
             <div id="products">
                 {console.log(JSON.stringify(Products))}
                 {Products.map( (product) =>{
-                    return <p>This is product {product.id}</p>
+                    return <Card product={product}/>
                 })}
             </div>
         </div>
