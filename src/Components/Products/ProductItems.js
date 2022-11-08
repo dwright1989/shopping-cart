@@ -2,7 +2,7 @@ const products = [
         {
             id: 0, 
             url: require("../../Images/blackAndWhiteLongSleeved.png"), 
-            name: "Black and White Long Sleeved Top", 
+            name: "Long Sleeved Top", 
             price: 15.99
         },
         {
@@ -44,7 +44,7 @@ const products = [
         {
             id: 7, 
             url: require("../../Images/whiteHoodie.png"), 
-            name: "white Hoodie", 
+            name: "White Hoodie", 
             price: 27.99
         },
         {
