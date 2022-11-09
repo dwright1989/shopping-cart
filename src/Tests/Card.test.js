@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import Card from '../Components/Card';
 
 describe('card testing renders', ()=>
@@ -37,6 +38,15 @@ describe('card testing renders', ()=>
         render(<Card product={item} handleAddToBasket={onChangeMock}/>);
         const addToBasketButton = screen.getByRole('button', {name: /Add To Basket/i});
         expect(addToBasketButton).toBeInTheDocument();
+    });
+
+
+    test('button handler called', () =>{
+        const onChangeMock = jest.fn();
+        render(<Card product={item} handleAddToBasket={onChangeMock}/>);
+        const addToBasketButton = screen.getByRole('button', {name: /Add To Basket/i});
+        userEvent.click(addToBasketButton);
+        expect(onChangeMock).toHaveBeenCalledTimes(1);
     });
 
 });
