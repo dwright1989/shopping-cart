@@ -9,7 +9,7 @@ export default function NavBar(props){
                 <a href="cart"><span className="material-symbols-outlined">
                     shopping_cart
                 </span></a>
-                <p id="basketQuantity">{props.basketQuantity.total}</p>
+                <p id="basketQuantity" data-testid="basket-quantity">{props.basketQuantity.total}</p>
            </div>
         </div>
     );
