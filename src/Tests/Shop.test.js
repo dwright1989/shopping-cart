@@ -1,8 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import Shop from '../Components/Shop';
 
-test('renders shop', () => {
-  render(<Shop />);
-  const shopContent = screen.getByText(/i am the shop/i);
-  expect(shopContent).toBeInTheDocument();
+describe('shop testing renders', ()=>
+{
+
+  test('renders card objects', () => {
+    const onChangeMock = jest.fn();
+    render(<Shop handleAddToBasket={onChangeMock}/>);
+    const cards = screen.getAllByTestId("card");
+    expect(cards.length).toBe(10);
+  });
+
 });
