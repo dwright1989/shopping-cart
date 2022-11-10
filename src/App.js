@@ -14,7 +14,7 @@ function App() {
       total: 0
   });
 
-  function handleAddToBasket(id){
+ function handleAddToBasket(id){
       setBasketQuantity
       (prevQuantity => ({
         total: prevQuantity.total+1

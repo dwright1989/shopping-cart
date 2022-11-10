@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app testing check renders 1`] = `
+<div
+  id="mainContent"
+>
+  <div
+    id="navBar"
+  >
+    <h1
+      className="brand"
+    >
+      Clothes
+      <span
+        className="tertiary"
+      >
+        4
+      </span>
+      You
+    </h1>
+    <div
+      id="links"
+    >
+      <a
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        href="shop"
+      >
+        Products
+      </a>
+      <a
+        href="about"
+      >
+        About
+      </a>
+      <a
+        href="cart"
+      >
+        <span
+          className="material-symbols-outlined"
+        >
+          shopping_cart
+        </span>
+      </a>
+      <p
+        data-testid="basket-quantity"
+        id="basketQuantity"
+      >
+        0
+      </p>
+    </div>
+  </div>
+  <div
+    id="pageDiv"
+  >
+    <div
+      className="page"
+      id="home"
+    >
+      <h1
+        className="brand"
+      >
+        Clothes
+        <span
+          className="tertiary"
+        >
+          4
+        </span>
+        You
+      </h1>
+      <p>
+        A fake portfolio store
+      </p>
+      <button
+        id="shopButton"
+      >
+        Shop Now
+      </button>
+    </div>
+  </div>
+  <div
+    id="footer"
+  >
+    Created by Debbie Wright 2022
+  </div>
+</div>
+`;
