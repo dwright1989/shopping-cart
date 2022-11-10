@@ -10,22 +10,23 @@ import './App.css';
 
 function App() {
 
-  const [basketQuantity, setBasketQuantity] = React.useState({
-      total: 0
+  const [basket, setBasket] = React.useState({
+      products: []
   });
 
- function handleAddToBasket(id){
-      setBasketQuantity
-      (prevQuantity => ({
-        total: prevQuantity.total+1
+ function handleAddToBasket(product){
+      setBasket
+      (prevBasket => ({
+        products: [...prevBasket.products,product]
     }))
   }
+
 
   
 
   return (
     <div id="mainContent">
-      <NavBar basketQuantity={basketQuantity}/>
+      <NavBar basketQuantity={basket.products.length}/>
       <div id="pageDiv">
       <BrowserRouter>
         <Routes>
