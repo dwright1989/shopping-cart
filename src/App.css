@@ -25,11 +25,9 @@ body{
 .page{
   color: var(--main-color);
   text-align: center;
-}
-
-#pageDiv{
   background-image: url("./Images/background.jpg");
 }
+
 
 /*NAVBAR*/
 #navBar{

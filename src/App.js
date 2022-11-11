@@ -58,9 +58,10 @@ function App() {
 
   return (
     <div id="mainContent">
-      <NavBar basketQuantity={1}/>
-      <div id="pageDiv">
+      
+
       <BrowserRouter>
+      <NavBar basketQuantity={1}/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/shop" element={<Shop  handleAddToBasket={handleAddToBasket}/>}/>
@@ -68,7 +69,7 @@ function App() {
           <Route path="/cart" element={<Cart basket={basket}/>}/>
         </Routes>
       </BrowserRouter>
-      </div>    
+
       <Footer/>
     </div>
   );
