@@ -1,7 +1,7 @@
-export default function Cart(){
+export default function Cart(props){
     return (
         <div id="cart">
-            I am the cart
+            <p>{JSON.stringify(props)}</p>
         </div>
     );
 }

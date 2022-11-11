@@ -14,26 +14,58 @@ function App() {
       products: []
   });
 
- function handleAddToBasket(product){
-      setBasket
-      (prevBasket => ({
-        products: [...prevBasket.products,product]
-    }))
+  /*React.useEffect(() => {
+    console.log(JSON.stringify(basket));
+  },[basket]);*/
+
+ function handleAddToBasket(idToBeAdded) {
+      let updateQuantity = basketContains(idToBeAdded);
+      if(updateQuantity){
+        let newBasket = [...basket.products];
+        for(let i=0; i<newBasket.length; i++){
+          if(newBasket[i].id===idToBeAdded){
+              newBasket[i].quantity++;
+          }
+        }
+        setBasket({
+          products: newBasket
+        })
+      }else{
+        if(basket.products.length===0){
+          setBasket({
+            products: [{id: idToBeAdded, quantity: 1}]
+          })
+        }else{
+          setBasket(prevBasket =>({
+            products: [...prevBasket.products, {id: idToBeAdded, quantity: 1}]
+          }))
+        }
+      }
   }
+
+  function basketContains(idToSearch){
+    let obj = basket.products.find(o=>o.id===idToSearch);
+    if(obj!=null && obj!==undefined){
+      return true;
+    }else{
+      return false
+    }
+  }
+
 
 
   
 
   return (
     <div id="mainContent">
-      <NavBar basketQuantity={basket.products.length}/>
+      <NavBar basketQuantity={1}/>
       <div id="pageDiv">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/shop" element={<Shop  handleAddToBasket={handleAddToBasket}/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path="/cart" element={<Cart/>}/>
+          <Route path="/cart" element={<Cart basket={basket}/>}/>
         </Routes>
       </BrowserRouter>
       </div>    
