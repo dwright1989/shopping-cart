@@ -14,9 +14,15 @@ function App() {
       products: []
   });
 
-  /*React.useEffect(() => {
-    console.log(JSON.stringify(basket));
-  },[basket]);*/
+  const [totals, setTotal] = React.useState({
+      quantity: 0
+      //price: 0
+  });
+
+
+  React.useEffect(() => {
+    updateTotals();
+  },[basket]);
 
  function handleAddToBasket(idToBeAdded) {
       let updateQuantity = basketContains(idToBeAdded);
@@ -52,6 +58,31 @@ function App() {
     }
   }
 
+  function updateTotals(){
+    let quantity = getTotalQuantity();
+    //let price = getTotalPrice();
+    setTotal({
+      quantity: quantity
+      //price: price
+    })
+  }
+
+  function getTotalQuantity(){
+    let quantity = 0;
+    basket.products.forEach(product=>{
+        quantity+=product.quantity;
+    })
+    return quantity;
+  }
+
+  /*function getTotalPrice(){
+    let quantity = 0;
+    basket.products.forEach(product=>{
+        quantity+=product.quantity;
+    })
+    return quantity;
+  }*/
+
 
 
   
@@ -61,7 +92,7 @@ function App() {
       
 
       <BrowserRouter>
-      <NavBar basketQuantity={1}/>
+      <NavBar basketQuantity={totals.quantity}/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/shop" element={<Shop  handleAddToBasket={handleAddToBasket}/>}/>
