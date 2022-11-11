@@ -81,10 +81,6 @@ function App() {
   }
 
   function getTotalPrice(){
-    // loop through basket
-    // for each product in basket, get from products file
-    // times product price by the quantity
-    // add to total price
     let totalPrice = 0;
     basket.products.forEach(product=>{
         let productMatch = Products.find(({id})=> id===product.id);
@@ -100,8 +96,6 @@ function App() {
 
   return (
     <div id="mainContent">
-      
-
       <BrowserRouter>
       <NavBar basketQuantity={totals.quantity}/>
         <Routes>

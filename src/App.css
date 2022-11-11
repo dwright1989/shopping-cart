@@ -141,11 +141,24 @@ body{
 }
 
 /*CART*/
+#cart{
+  padding: 2rem;
+}
 #cartContainer{
   width: 50%;
   margin: auto;
   background-color: var(--main-color);
   color: var(--secondary-color);
+}
+
+#cartItems{
+  display: grid;
+  gap: 1rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.cart-item{
+  border: 1px solid var(--secondary-color);
 }
 
 /*FOOTER*/
