@@ -54,6 +54,25 @@ function App() {
       }
   }
 
+  function handleRemoveFromBasket(idToBeRemoved) {
+
+      let newBasket = [...basket.products];
+        for(let i=0; i<newBasket.length; i++){
+          if(newBasket[i].id===idToBeRemoved){
+              if(newBasket[i].quantity===1){
+                  newBasket.splice(i, 1);
+              }else{
+                newBasket[i].quantity--;
+              }
+              
+          }
+        }
+        setBasket({
+          products: newBasket
+        })
+    
+  }
+
   function basketContains(idToSearch){
     let obj = basket.products.find(o=>o.id===idToSearch);
     if(obj!=null && obj!==undefined){
@@ -102,7 +121,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/shop" element={<Shop  handleAddToBasket={handleAddToBasket}/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path="/cart" element={<Cart basket={basket} totals={totals} handleAddToBasket={handleAddToBasket}/>}/>
+          <Route path="/cart" element={<Cart basket={basket} totals={totals} handleAddToBasket={handleAddToBasket} handleRemoveFromBasket={handleRemoveFromBasket} />}/>
         </Routes>
       </BrowserRouter>
 
