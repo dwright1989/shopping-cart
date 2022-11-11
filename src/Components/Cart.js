@@ -22,15 +22,17 @@ export default function Cart(props){
                                         <img src={itemToDisplay.url} alt="product"/>
                                         <p>£{itemToDisplay.price}</p>
 
-                                        <div className="quantityEditor">
+                                        <div className="quantity-editor">
                                                 <button onClick={handleAddToBasket.bind(this, item.id)}>+</button>
                                                 <p>{item.quantity}</p>
                                                 <button onClick={handleRemoveFromBasket.bind(this, item.id)}>-</button>
                                         </div>
+                                        <hr/>
                             </div>)
                     })}
                 </div>
                 <p>Total: £{totals.price.toFixed(2)}</p>
+                <button>Checkout</button>
             </div>
         </div>
     );

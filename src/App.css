@@ -145,7 +145,7 @@ body{
   padding: 2rem;
 }
 #cartContainer{
-  width: 50%;
+  width: 35%;
   margin: auto;
   background-color: var(--main-color);
   color: var(--secondary-color);
@@ -158,13 +158,29 @@ body{
 }
 
 .cart-item{
-  border: 1px solid var(--secondary-color);
   width: 70%;
   margin: auto;
 }
 
 .cart-item>img{
-  width: 20vw;
+  width: 5vw;
+}
+
+.quantity-editor{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  justify-items: center;
+  width: 40%;
+  margin: auto;
+}
+
+.quantity-editor>button{
+  width: 2vw;
+  height: 2vw;
+  align-self:center;
+  text-align: center;
+  cursor:pointer;
 }
 
 /*FOOTER*/
