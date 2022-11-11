@@ -140,6 +140,14 @@ body{
   cursor: pointer;
 }
 
+/*CART*/
+#cartContainer{
+  width: 50%;
+  margin: auto;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+}
+
 /*FOOTER*/
 #footer{
   text-align: center;
