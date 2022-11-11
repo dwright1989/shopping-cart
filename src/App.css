@@ -159,6 +159,12 @@ body{
 
 .cart-item{
   border: 1px solid var(--secondary-color);
+  width: 70%;
+  margin: auto;
+}
+
+.cart-item>img{
+  width: 20vw;
 }
 
 /*FOOTER*/

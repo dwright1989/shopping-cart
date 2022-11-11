@@ -102,7 +102,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/shop" element={<Shop  handleAddToBasket={handleAddToBasket}/>}/>
           <Route path="/about" element={<About/>}/>
-          <Route path="/cart" element={<Cart basket={basket}/>}/>
+          <Route path="/cart" element={<Cart basket={basket} totals={totals}/>}/>
         </Routes>
       </BrowserRouter>
 

@@ -2,8 +2,9 @@
 import Products from "./Products/ProductItems";
 
 export default function Cart(props){
-    let items = props.basket.products;
-
+    console.log(JSON.stringify(props));
+    const {basket, totals} = props;
+    let items = basket.products;
     function getProductFromId(theId){
         let productMatch = Products.find(({id})=> id===theId);
         return productMatch;
@@ -15,10 +16,14 @@ export default function Cart(props){
                 <div id="cartItems">
                     {items.map(item=>{
                         let itemToDisplay = getProductFromId(item.id);
-                        console.log(JSON.stringify(itemToDisplay));
-                        return (<div className="cart-item"><p>{itemToDisplay.name}</p></div>)
+                        return (<div className="cart-item">
+                                        <p>{itemToDisplay.name}</p>
+                                        <img src={itemToDisplay.url} alt="product"/>
+                                        <p>£{itemToDisplay.price}</p>
+                            </div>)
                     })}
                 </div>
+                <p>Total: £{totals.price.toFixed(2)}</p>
             </div>
         </div>
     );
