@@ -6,6 +6,7 @@ import Home from "./Components/Home.js";
 import Shop from "./Components/Shop.js";
 import About from "./Components/About.js";
 import Cart from "./Components/Cart.js";
+import Products from "./Components/Products/ProductItems";
 import './App.css';
 
 function App() {
@@ -15,14 +16,18 @@ function App() {
   });
 
   const [totals, setTotal] = React.useState({
-      quantity: 0
-      //price: 0
+      quantity: 0,
+      price: 0
   });
 
 
   React.useEffect(() => {
     updateTotals();
   },[basket]);
+
+  React.useEffect(() => {
+    console.log("totals have changed to: " + JSON.stringify(totals));
+  },[totals]);
 
  function handleAddToBasket(idToBeAdded) {
       let updateQuantity = basketContains(idToBeAdded);
@@ -60,10 +65,10 @@ function App() {
 
   function updateTotals(){
     let quantity = getTotalQuantity();
-    //let price = getTotalPrice();
+    let price = getTotalPrice();
     setTotal({
-      quantity: quantity
-      //price: price
+      quantity: quantity,
+      price: price
     })
   }
 
@@ -75,13 +80,19 @@ function App() {
     return quantity;
   }
 
-  /*function getTotalPrice(){
-    let quantity = 0;
+  function getTotalPrice(){
+    // loop through basket
+    // for each product in basket, get from products file
+    // times product price by the quantity
+    // add to total price
+    let totalPrice = 0;
     basket.products.forEach(product=>{
-        quantity+=product.quantity;
+        let productMatch = Products.find(({id})=> id===product.id);
+        let price = productMatch.price * product.quantity;
+        totalPrice+=price;
     })
-    return quantity;
-  }*/
+    return totalPrice;
+  }
 
 
 
