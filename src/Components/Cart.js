@@ -1,7 +1,6 @@
 import Products from "./Products/ProductItems";
 
 export default function Cart(props) {
-  console.log(JSON.stringify(props));
   const { basket, totals, handleAddToBasket, handleRemoveFromBasket } = props;
   let items = basket.products;
   function getProductFromId(theId) {
