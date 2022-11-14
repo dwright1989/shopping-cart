@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.442b5e30.css",
+    "main.js": "/shopping-cart/static/js/main.eb70a622.js",
+    "static/js/787.d6fe38e8.chunk.js": "/shopping-cart/static/js/787.d6fe38e8.chunk.js",
+    "static/media/background.jpg": "/shopping-cart/static/media/background.70c24bde989d7598965a.jpg",
+    "static/media/tieDieTShirt.png": "/shopping-cart/static/media/tieDieTShirt.29a5e6e66c237a002963.png",
+    "static/media/greyTShirt.png": "/shopping-cart/static/media/greyTShirt.b963a1f7e8e02ddcc711.png",
+    "static/media/blackAndWhiteLongSleeved.png": "/shopping-cart/static/media/blackAndWhiteLongSleeved.9a746d7d50920794be4c.png",
+    "static/media/blueSliders.png": "/shopping-cart/static/media/blueSliders.6d706f7a4fe8f7db96a4.png",
+    "static/media/greyShoes.png": "/shopping-cart/static/media/greyShoes.84469daffe298a9bb90d.png",
+    "static/media/blackZipper.png": "/shopping-cart/static/media/blackZipper.707e00c4d9d512379eb5.png",
+    "static/media/greyJoggers.png": "/shopping-cart/static/media/greyJoggers.11e34b14215499a0c7a4.png",
+    "static/media/whiteShoes.png": "/shopping-cart/static/media/whiteShoes.542e24d8a9fd73b86968.png",
+    "static/media/whiteHoodie.png": "/shopping-cart/static/media/whiteHoodie.6b7a12b5852df7fcac0b.png",
+    "static/media/whiteSliders.png": "/shopping-cart/static/media/whiteSliders.7ea93d57df7588ec725a.png",
+    "index.html": "/shopping-cart/index.html",
+    "main.442b5e30.css.map": "/shopping-cart/static/css/main.442b5e30.css.map",
+    "main.eb70a622.js.map": "/shopping-cart/static/js/main.eb70a622.js.map",
+    "787.d6fe38e8.chunk.js.map": "/shopping-cart/static/js/787.d6fe38e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.442b5e30.css",
+    "static/js/main.eb70a622.js"
+  ]
+}
