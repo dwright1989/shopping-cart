@@ -47,7 +47,7 @@ export default function Cart(props) {
           <div>
             <p>No items currently in your cart.</p>
             <p>
-              <a href="/Shop">Click here</a> to shop.
+              <a id="cartLink" href="/Shop">Click here</a> to shop.
             </p>
           </div>
         )}

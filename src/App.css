@@ -149,11 +149,16 @@ body{
 #cart{
   padding: 2rem;
 }
+
+#cartLink{
+  color: var(--tertiary-color);
+}
 #cartContainer{
   width: 35%;
   margin: auto;
   background-color: var(--main-color);
   color: var(--secondary-color);
+  min-height: 500px;
 }
 
 #cartItems{
@@ -246,6 +251,27 @@ MEDIA QUERIES FOR MOBILE DEVICES
   }
   #card>button{
     font-size: 2vw;
+  }
+
+  /*CART*/
+  #cartContainer{
+    width: 95%;
+  }
+  .cart-item{
+    width: 90%;
+  }
+  
+  .cart-item>img{
+    width: 25vw;
+  }
+
+  .quantity-editor{
+    width: 20%;
+  }
+  
+  .quantity-editor>button{
+    width: 4vw;
+    height: 4vw;
   }
 
 }
