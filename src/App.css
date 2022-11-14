@@ -161,6 +161,23 @@ body{
   min-height: 500px;
 }
 
+#checkout{
+  background-color: var(--tertiary-color);
+  border: none;
+  border-radius: 20px;
+  font-size: 2vw;
+  padding: 0.5vw 1vw;
+  margin-bottom: 2vw;
+}
+
+#checkout:hover,
+#checkout:focus{
+  cursor:pointer;
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  transform: translateY(-0.25em);
+}
+
 #cartItems{
   display: grid;
   gap: 1rem;

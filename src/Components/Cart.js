@@ -40,7 +40,7 @@ export default function Cart(props) {
               })}
             </div>
             <p>Total: £{totals.price.toFixed(2)}</p>
-            <button>Checkout</button>
+            <button id="checkout">Checkout</button>
           </div>
         )}
         {items.length === 0 && (
