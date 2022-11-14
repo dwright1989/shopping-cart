@@ -22,6 +22,12 @@ body{
   color: var(--tertiary-color);
 }
 
+#mainContent{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 12% 83% 5%;
+}
+
 .page{
   color: var(--main-color);
   text-align: center;
@@ -71,11 +77,10 @@ body{
 }
 
 /*HOME*/
-#home{
-  padding: 5rem;
-}
 #home>h1{
   font-size: 10vw;
+  padding: 5vw 0 0 0;
+  margin: 0;
 }
 
 #shopButton{
