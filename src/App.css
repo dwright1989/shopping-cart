@@ -89,6 +89,8 @@ body{
   border-radius: 20px;
   font-size: 2vw;
   padding: 0.5vw 1vw;
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 #shopButton:hover,
