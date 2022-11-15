@@ -223,9 +223,6 @@ MEDIA QUERIES FOR MOBILE DEVICES
 
 
 @media only screen and (max-width:600px){ 
-  #mainContent{
-    grid-template-rows: 10% 85% 5%;
-  }
 
   /*NAVBAR*/
   #navBar{
