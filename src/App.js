@@ -118,7 +118,7 @@ function App() {
       <BrowserRouter>
       <NavBar basketQuantity={totals.quantity}/>
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/shopping-cart/" element={<Home/>}/>
           <Route path="/shop" element={<Shop  handleAddToBasket={handleAddToBasket}/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/cart" element={<Cart basket={basket} totals={totals} handleAddToBasket={handleAddToBasket} handleRemoveFromBasket={handleRemoveFromBasket} />}/>

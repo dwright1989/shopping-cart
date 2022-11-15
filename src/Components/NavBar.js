@@ -5,7 +5,7 @@ export default function NavBar(props){
         <div id="navBar">
            <h1 className="brand">Clothes<span className="tertiary">4</span>You</h1>
            <div id="links">
-                <Link to="/">Home</Link>
+                <Link to="/shopping-cart/">Home</Link>
                 <Link to="shop">Products</Link>
                 <Link to="about">About</Link>
                 <Link to="cart"><span className="material-symbols-outlined">
