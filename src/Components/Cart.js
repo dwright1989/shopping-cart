@@ -1,4 +1,6 @@
 import Products from "./Products/ProductItems";
+import {Link} from "react-router-dom";
+
 
 export default function Cart(props) {
   const { basket, totals, handleAddToBasket, handleRemoveFromBasket } = props;
@@ -47,7 +49,7 @@ export default function Cart(props) {
           <div>
             <p>No items currently in your cart.</p>
             <p>
-              <a id="cartLink" href="/Shop">Click here</a> to shop.
+            <Link to="../shop" id="cartLink">Click here</Link> to shop.
             </p>
           </div>
         )}

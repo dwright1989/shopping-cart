@@ -213,7 +213,7 @@ body{
 /*FOOTER*/
 #footer{
   text-align: center;
-  padding-top: 1vw;
+  padding: 1vw;
   font-size: 1vw;
 }
 
@@ -227,6 +227,7 @@ MEDIA QUERIES FOR MOBILE DEVICES
   /*NAVBAR*/
   #navBar{
     display: block;
+    margin: auto;
   }
   #navBar>h1{
     text-align:center;
@@ -261,7 +262,7 @@ MEDIA QUERIES FOR MOBILE DEVICES
   }
 
   #card>p{
-    font-size: 1vw;
+    font-size: 2vw;
   }
   #card>button{
     font-size: 2vw;
@@ -284,6 +285,9 @@ MEDIA QUERIES FOR MOBILE DEVICES
   }
   
   .quantity-editor>button{
+    display:grid;
+    align-content: center;
+    justify-content: center;
     width: 4vw;
     height: 4vw;
   }
